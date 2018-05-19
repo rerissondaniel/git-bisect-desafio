@@ -7,3 +7,15 @@ $(function() {
 		});
 	});
 });
+
+$(function() {
+	$('.btn-enough').on('click', function() {
+		$('.marketing').slideUp(200, function() {
+			$('.jumbotron').fadeIn(1000, function() {
+                $('.marketing').fadeIn(200, function() {
+                    $('.jumbotron-part-two').fadeOut(1000);
+                });
+			});
+		});
+	});
+});
